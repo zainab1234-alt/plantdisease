@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Identifier</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef7e8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4caf50, #2e7d32);
+            color: white;
+            padding: 20px 10%;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px 0;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background: #4caf50;
+            color: white;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x800/?plants,nature') no-repeat center center/cover;
+            color: white;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin-top: 15px;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Plant Disease Identifier</h1>
+        <p>Helping you protect your plants with advanced disease detection</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Detect Plant Diseases Instantly</h2>
+        <p>Upload plant images and identify diseases with AI-powered accuracy</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Plant Disease Identifier, our mission is to empower farmers, gardeners, and plant enthusiasts with the tools to maintain healthy plants. Using state-of-the-art image recognition technology, we make disease detection quick and easy.</p>
+    </section>
+
+    <section id="features">
+        <h2>Our Features</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://source.unsplash.com/300x200/?plant" alt="Plant Analysis">
+                <h3>AI-Powered Analysis</h3>
+                <p>Advanced machine learning to identify plant diseases.</p>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/300x200/?agriculture" alt="Disease Library">
+                <h3>Comprehensive Database</h3>
+                <p>Access a wide range of plant diseases and remedies.</p>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/300x200/?mobile" alt="Mobile-Friendly">
+                <h3>Easy to Use</h3>
+                <p>Upload images from any device for instant results.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Plant Disease Identifier. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
